@@ -15,3 +15,7 @@ def user(name):
 @app.errorhandler(404)
 def error(e):
     return "Maaf Error" , 404
+
+@app.errorhandler(500)
+def error(e):
+    return "Maaf Error" , 500
